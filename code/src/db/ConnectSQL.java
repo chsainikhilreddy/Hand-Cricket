@@ -10,7 +10,7 @@ public class ConnectSQL {
 			//step1 load the driver class  
 			Class.forName("oracle.jdbc.driver.OracleDriver");  
 			con=DriverManager.getConnection(  
-			"jdbc:oracle:thin:@localhost:1521:xe","system","nikhil12"); 
+			"jdbc:oracle:thin:@localhost:1521:xe","system","password"); 
 			stmt=con.createStatement(); 
 			}catch(Exception e){ System.out.println(e);} 
 	}

@@ -132,7 +132,7 @@ public class HandCricket extends JFrame {
 		Stats = new JPanel();
 		TeamP=new JPanel();
 		JLabel imag = new JLabel();
-		imag.setIcon(new ImageIcon("E:\\Welcome.png"));// Change the path to your location (...\src\Images\Welcome.png)
+		imag.setIcon(new ImageIcon("..\\Images\\Welcome.png"));// Change the path to your location (...\src\Images\Welcome.png)
 		imag.setBounds(350,100,512,256);
 		Welcome.add(imag);
 		startGame=new JButton("Let's play");
@@ -324,18 +324,18 @@ public class HandCricket extends JFrame {
 		newBowler.setBounds(1000,530,300,200);
 		newBatsman.setEditable(false);
 		newBowler.setEditable(false);
-		batting.setIcon(new ImageIcon("E:\\L0.jpg"));// Change the path to your location (...\src\Images\L0.png)
-		bowling.setIcon(new ImageIcon("E:\\R0.jpg"));// Change the path to your location (...\src\Images\R0.png)
+		batting.setIcon(new ImageIcon("..\\Images\\L0.jpg"));// Change the path to your location (...\src\Images\L0.png)
+		bowling.setIcon(new ImageIcon("..\\Images\\R0.jpg"));// Change the path to your location (...\src\Images\R0.png)
 		for(int i=0;i<14;i++)
 			scoreImages[i] = new JLabel();
 		for(int i=0;i<7;i++)
 			if(i!=5) {
-				scoreImages[i].setIcon(new ImageIcon("E:\\L"+i+".jpg"));// Change the path to your location (...\src\Images\abcd.png)
+				scoreImages[i].setIcon(new ImageIcon("..\\Images\\L"+i+".jpg"));// Change the path to your location (...\src\Images\abcd.png)
 				scoreImages[i].setBounds(150,50,250,250);
 			}
 		for(int i=7;i<14;i++)
 			if(i!=12) {
-				scoreImages[i].setIcon(new ImageIcon("E:\\R"+(i-7)+".jpg"));// Change the path to your location (...\src\Images\abcd.png)
+				scoreImages[i].setIcon(new ImageIcon("..\\Images\\R"+(i-7)+".jpg"));// Change the path to your location (...\src\Images\abcd.png)
 				scoreImages[i].setBounds(400,50,250,250);
 			}
 		displayScore.setBounds(300,500,600,23);
